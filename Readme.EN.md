@@ -4,29 +4,29 @@
 <br/>
 <br/>
 
+# Introduction
+Nekonium is a *Distributed Application Platform* forked from <a href="https://ethereum.org/">**Ethereum**</a>. This project was initalized on July 2017 to propose an Ethereum Clone to Japan, and also to experience & utilize it's  functionalities.  We hope that many will gain knowledge through usage of this platform.
 
-NekoniumはEthereumクローンの分散型アプリケーションプラットフォームです。Ethereumコピーコインの実装例の提示と、Ethereumの機能を学習する目的で起動されました。Nekoniumの送受信や採掘を通して、Ethereumと仮想通貨のシステムを学んでいただければ幸いです。
+Nekonium is developed and operated by the **Nekonium Project**. Unlike other various decentralized currencies, Nekonium is not fit for speculation, and we would like to warn that chances for profit from mining or investment are low.
 
-NekoniumはNekonium Projectが開発しています。一般的な非中央集権型の投機通貨ではなく、採掘や投資で利益が得られる可能性は低いので注意してください。
+### Disclamer
+Nekonium Project holds no responsibility for any damage and loss resulting from usage of this platform and all related software - including issues related to loss of balance. You are solely liable and responsible for all consequences.
 
-公開されているソフトウェアに起因するあらゆる損害、トラブルに関して、Nekonium Projectは責任を負いません。内部通貨の消失を含むトラブルについても、一切責任を負うことができません。利用者の責任において使用してください。
 
-
-# スペック
-Nekoniumは、イーサリウムのパラメータを僅かに調整しただけのコピーコインです。
-内部通貨として、Nekonium(NUKO)を発行しており、採掘が可能です。
+# Specification
+Due to the clone nature of Nekonium, it's internal specs are mostly the same as Ethereum.　The coin/currency in circulation within this platform is named Nekonium (**NUKO** for short), and mining is possible via POW.
 
 ```
-* 名称 nekonium
-* 単位 NUKO
+* Name nekonium
+* Unit NUKO
 * Premine 12,448,421 NUKO
-* 採掘上限なし
-* TCP/UDPポート番号 28568
-* UDPポート番号 28566
+* Mining Limit None
+* TCP/UDP Port 28568
+* UDP　Port 28566
 * RPC(HTTP) 8293
 * RPC(WS) 8294
-* Reward 7.5NUKO
-* BlockTime	
+* Reward 7.5 NUKO
+* BlockTime
 *   0 - 0  Block      Frontier 19sec
 *   - 7776 Block      Homestead 10-20sec target DiffBoundDiv=512
 *   7777 - Block      Homestead 19-29sec target　Without Exp BOM DiffBoundDiv=1024
@@ -34,22 +34,24 @@ Nekoniumは、イーサリウムのパラメータを僅かに調整しただけ
 * DifficultyBoundDivisor 1024
 ```
 
-<a href="https://nekonium.github.io/premine.html">Premineについて</a>
+<a href="https://nekonium.github.io/premine.html">&gt;&gt;Premine details&lt;&lt;</a>
 
 
-# 起動スケジュール
+### Startup Schedule
 
-* <s>Closed Beta (～6/28)</s>
-* <s>Open Beta (6/29～)</s>　
-* ✅Release　20000ブロックの採掘が完了しましたので、正式版としてリリースしした。ご自由に遊んでください。<s>Discordで配布も行っております。giveawayチャンネルにアドレスを張ってください。(100NUKO配布します)</s>終了しました。
+* <s>Closed Beta (～6/28)</s> **Done**
+* <s>Open Beta (6/29～)</s>　**Done**
+* ✅Release
+
+Officially released, since 20000 Blocks have been mined. Please have fun!
+<s>We're also doing giveaways in Discord, join in to get 100 NUKOs</s> **Done**
 
 
 
-
-# ダウンロード
+# Downloads
 
 ## gnekonium
-<a href="https://github.com/nekonium/go-nekonium">https://github.com/nekonium/go-nekonium</a> 
+<a href="https://github.com/nekonium/go-nekonium">https://github.com/nekonium/go-nekonium</a>
 
 go-ethereum(geth)を基にしたnekoniumのクライアントソフトウェアです。
 
@@ -66,7 +68,7 @@ gnekoniumのコンソールからマイニングすることができます。
 
 ## ウォレットアプリケーション
 
-<a href="https://github.com/nekonium/mist">https://github.com/nekonium/mist</a> 
+<a href="https://github.com/nekonium/mist">https://github.com/nekonium/mist</a>
 
 Ethereum Mistベースのウォレットです。マイニングはできません。現在はオートアップデートが機能しませんので、gnekoniumを起動してから使用してください。
 
